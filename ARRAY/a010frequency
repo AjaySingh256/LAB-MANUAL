@@ -1,0 +1,29 @@
+//write a program to find the frequency in a sorted a sorted array 
+#include<stdio.h>
+void frequencies(int arr[] , int n){
+    int i, count;
+    for(i=0;i<n;i++){
+        count = 1;
+    
+    while(i<n-1 && arr[i]==arr[i+1]){
+        count++;
+        i++;
+    }
+    printf("Element %d occurs %d time \n",arr[i],count);
+    }
+}
+int main(){
+    int arr[] = {1,1,2,2,3,4,4,5};
+    int n=sizeof(arr)/sizeof(arr[0]);
+
+    printf("Frequencies of element in the sorted array:\n");
+     frequencies( arr ,  n);
+
+}
+// ***OUTPUT***
+// Frequencies of element in the sorted array:
+// Element 1 occurs 2 time 
+// Element 2 occurs 2 time 
+// Element 3 occurs 1 time 
+// Element 4 occurs 2 time 
+// Element 5 occurs 1 time 
