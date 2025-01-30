@@ -1,0 +1,28 @@
+//find second largest number
+#include<stdio.h>
+int Slargest(int arr[], int n)
+{
+    int largest = -1 ,  secLargest =-1;
+
+    // finding the largest element
+    for(int i=0;i<n;i++){
+        if(arr[i]>largest)
+        largest = arr[i];
+    }
+    //Findind the second largest element 
+    for(int i = 0; i<n;i++){
+
+        if(arr[i]> secLargest && arr[i]!=largest){
+            secLargest = arr[i];
+        }
+    }
+    return secLargest;
+}
+int main(){
+    int arr[] = {12,35,1,10,34,1};
+    int n = sizeof(arr)/sizeof(arr[0]);
+
+    printf(" The SecondLargest num %d\n",Slargest(arr,n));
+}
+//***OUTPUT***
+//The SecondLargest num 34
