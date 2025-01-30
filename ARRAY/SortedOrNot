@@ -1,0 +1,29 @@
+// Cheak The Array Sorted or Not
+#include <stdio.h>
+int sotred(int arr[], int n)
+{
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>arr[i+1])
+        {
+            return 0; //not sorted
+        }
+    }
+    return 1;
+}
+int main()
+{
+    int arr[] = {1,2,4,3,5};
+    int n = sizeof(arr)/sizeof(arr[0]);
+
+    if(sotred(arr, n)){
+        printf("The Array is Sorted\n");
+     }
+     else{
+        printf("The Array is Not Sorted\n");
+     }
+     return 0;
+     }
+// ***OUTPUT***
+// The Array is Not Sorted
+
