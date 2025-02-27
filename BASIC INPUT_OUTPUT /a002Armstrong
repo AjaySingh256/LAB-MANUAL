@@ -1,0 +1,36 @@
+// Find Armstrong 
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int n;
+    printf("enter number:");
+    scanf("%d",&n);
+
+int temp=n;
+float m;
+float r=0;
+int count=0;
+while(temp){
+m=temp%10;
+count++;
+temp=temp/10;
+}
+temp=n;
+
+while(temp){
+    m=temp%10;
+    r=r+pow(m,count);
+    temp=temp/10;
+}
+
+if(n==r){
+    printf("armstrong");
+}
+else{
+    printf("not armstrong");
+}
+
+}
+//***OUTPUT***
+// enter number:8
+// armstrong
