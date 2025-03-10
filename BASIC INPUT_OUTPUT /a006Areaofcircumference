@@ -1,0 +1,18 @@
+// Area of circumference
+#include<stdio.h>
+int main()
+{
+   float radius,area,cf; 
+    printf(" \n Enter radius of circle :");
+    scanf("%f",& radius);
+    // value of pi is 3.14
+    area= 3.1415*radius*radius;
+    printf(" The area of circle is : %f",area);
+    cf=2*3.1415*radius;
+    printf("\n The circumference of circle is %f",cf);
+    return 0;
+}
+// ***OUTPUT***
+// Enter radius of circle :4
+// The area of circle is : 50.264000 
+// The circumference of circle is 25.132000
