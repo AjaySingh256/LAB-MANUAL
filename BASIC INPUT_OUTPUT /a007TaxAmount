@@ -1,0 +1,32 @@
+// Tax Amount
+#include<stdio.h>
+int main()
+{
+    float amount,Tax;
+    printf("enter amount:");
+    scanf("%f",&amount);
+    if(amount>250000)
+    {
+        Tax=25000+(30*(amount-250000)/100);
+        printf("\n Tax=%f",Tax);
+    }
+    else if(amount>150000)
+    {
+        Tax=5000+(20*(amount-150000)/100);
+        printf("\n Tax=%f",Tax);
+    }
+    else if(amount>100000)
+    {
+        Tax=(10*(amount-100000)/100);
+        printf("\n Tax=%f",Tax);
+    }
+    else
+    {
+        Tax=0;
+        printf("\nTax=%f",Tax);
+    }
+    return 0;
+}
+// ***OUTPUT***
+// enter amount:110000
+//  Tax=1000.000000
