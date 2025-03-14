@@ -1,0 +1,17 @@
+// Swaping
+#include<stdio.h>
+int main(){
+   int a,b;
+   printf("enter the values for a and b:");
+   scanf("%d%d",&a,&b);
+   printf("value of a=%d and b=%d before swap",a,b);
+   a= a^b;
+   b= a^b;
+   a= a^b;
+   printf("value of a=%d and b=%d after swap",a,b);
+   return 0;
+}
+// ***OUTPUT***
+// enter the values for a and b:9
+// 10
+// value of a=9 and b=10 before swapvalue of a=10 and b=9 after swap 
