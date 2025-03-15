@@ -1,0 +1,36 @@
+// Find Sqrtroot
+#include <stdio.h>
+
+int main() { int x;
+    
+    printf("Enter a non-negative integer: ");
+    scanf("%d", &x);
+
+    int left = 0, right = x, mid, sqrt;
+    if (x < 2) {
+        printf("The square root of %d rounded down is %d\n", x, x);
+        return 0;
+    }
+    while (left <= right) {
+        mid = left + (right - left) / 2;
+        long long midSquared = (long long)mid * mid; 
+
+        if (midSquared == x) {
+            sqrt = mid; 
+            break;
+        } else if (midSquared < x) {
+            sqrt = mid; 
+            left = mid + 1;
+        } else {
+            right = mid - 1; 
+        }
+    }
+
+    
+    printf(" square root of %d rounded down is %d\n", x, sqrt);
+    return 0;
+}
+
+// ***OUTPUT***
+// Enter a non-negative integer: 36
+//  square root of 36 rounded down is 6
