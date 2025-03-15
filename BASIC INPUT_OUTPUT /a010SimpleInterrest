@@ -1,0 +1,20 @@
+// Find Simple Interrest
+#include<stdio.h>
+int main()
+{
+    float principal,rate,time,si; 
+    printf(" enter Prin1cipal :");
+    scanf("%f",&principal);
+    printf(" inter Rate :");
+     scanf("%f",&rate);
+     printf(" inter Time :");
+     scanf("%f",&time);
+    si = (principal*rate*time)/100;
+    printf("Your simple interest is : %f",si);
+    return 0;
+}
+// ***OUTPUT***
+// enter Prin1cipal :20
+// inter Rate :100
+// inter Time :2
+// Your simple interest is : 40.000000
