@@ -1,4 +1,4 @@
-// INPUT TWO NUMBER AND ADD
+/// INPUT TWO NUMBER AND ADD
 #include<stdio.h>
 int main()
 {
